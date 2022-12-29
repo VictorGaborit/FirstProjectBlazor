@@ -1,4 +1,5 @@
-﻿using MyFirstProject.Models;
+﻿using MyFirstProject.Components;
+using MyFirstProject.Models;
 
 namespace MyFirstProject.Services
 {
@@ -14,5 +15,6 @@ namespace MyFirstProject.Services
         Task Update(int id, ItemModel model);
 
         Task Delete(int id);
+        Task<List<CraftingRecipe>> GetRecipes();
     }
 }
